@@ -1,4 +1,7 @@
 User-agent: *
+
+Sitemap: http://florianbersier.com/sitemap.xml
+
 Disallow: /humans.txt
 Disallow: /restricted/
 Disallow: /papers/
@@ -12,4 +15,3 @@ Disallow: /2009/
 Disallow: /2010/
 Disallow: /2011/
 Disallow: /2012/
-Allow: /

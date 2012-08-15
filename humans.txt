@@ -1,0 +1,19 @@
+/* ABOUT ME */
+                
+Name	 :	Florian Bersier
+            
+Website  : 	http://florianbersier.com
+Google+  :  	https://profiles.google.com/florian.bersier                    
+Twitter  : 	https://twitter.com/xpressyoo
+Facebook :	https://facebook.com/bersier
+LinkedIn : 	http://www.linkedin.com/in/florianbersier
+Github   :	https://github.com/xpressyoo
+Portfolio:	http://www.be.net/bersier
+
+		
+/* SITE */
+                          
+Standards : HTML5, CSS3, JavaScript
+Components: jQuery
+Libs & API: Google Map, Twitter, SoundCloud
+Icons	  : Font Awesome, http://fortawesome.github.com/Font-Awesome/

@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: /humans.txt
+Disallow: /restricted/
+Disallow: /papers/
+Disallow: /cgi-bin/
+Disallow: /search/
+Disallow: /error.php
+Disallow: /wiki/
+Disallow: /tag/
+Disallow: /uncategorized/
+Disallow: /2009/
+Disallow: /2010/
+Disallow: /2011/
+Disallow: /2012/
+Allow: /

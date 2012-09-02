@@ -17,3 +17,10 @@ Standards : HTML5, CSS3, JavaScript
 Components: jQuery
 Libs & API: Google Map, Twitter, SoundCloud
 Icons	  : Font Awesome, http://fortawesome.github.com/Font-Awesome/
+
+/* BLOG */
+
+Framework : Jekyll & Ruby
+Standards : HTML5, CSS3, JavaScript
+Components: jQuery
+Libs and API: Youtube

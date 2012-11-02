@@ -3,9 +3,9 @@
 Name	 :	Florian Bersier
             
 Website  : 	http://florianbersier.com
-Google+  :  	https://profiles.google.com/florian.bersier                    
+Google+  :  	https://profiles.google.com/florian.bersier
 Twitter  : 	https://twitter.com/xpressyoo
-Facebook :	https://facebook.com/bersier
+Facebook :	https://facebook.com/florian.bersier
 LinkedIn : 	http://www.linkedin.com/in/florianbersier
 Github   :	https://github.com/xpressyoo
 Portfolio:	http://www.be.net/bersier

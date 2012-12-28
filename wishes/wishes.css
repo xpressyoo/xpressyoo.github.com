@@ -159,3 +159,31 @@ body {
     position: absolute;
     bottom: 0;
 }
+
+@media only screen and (max-width:48.5em) {
+
+#wishes{
+	margin:33% 5% 0;
+	}
+
+#footer,pre{display:none}
+
+#fname {
+	display:block;
+	top:445px;
+	margin-left:5%;
+	height:40px;
+}
+
+#msg h1,#msg h2{
+	text-align:center !important;
+	}
+
+#details{
+	width:100%;
+	right:0;
+	bottom:0;
+	text-align:center
+	}
+
+}

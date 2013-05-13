@@ -40,7 +40,7 @@
 	margin-right: 6px;
 }
 
-.playing .sc-time-indicators {
+.playing .sc-time-indicators i {
 	color: #2584d4;
 }
 
@@ -55,7 +55,10 @@
 }
 
 .sc-player .sc-controls {
-	margin-left: 12px;
+	margin-left: 15px;
+	width:30px;
+	overflow:hidden;
+	text-align:left
 }
 
 .sc-player .sc-controls a i{

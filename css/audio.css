@@ -65,19 +65,19 @@
 }
 
 .sc-player .sc-controls .sc-pause {
-	display:none;
+	visibility:hidden;
 }
 
 .sc-player .sc-controls .sc-play {
-	display:block;
+	visibility:visible;
 }
 
 .sc-player.playing .sc-controls .sc-play {
-	display:none;
+	visibility:hidden;
 }
 
 .sc-player.playing .sc-controls .sc-pause {
-	display:block;
+	visibility:visible;
 }
 
 .sc-player .sc-controls:hover a {

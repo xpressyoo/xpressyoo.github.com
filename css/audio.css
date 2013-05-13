@@ -54,8 +54,8 @@
 }
 
 .sc-player .sc-controls {
-	margin: 0 0 0 5px;
-	width:50px;
+	margin: 0 5px;
+	width:auto;
 	overflow:hidden;
 	text-align:left
 }
@@ -64,19 +64,19 @@
 	color: #333;
 }
 
-.sc-player .sc-controls .icon-pause {
+.sc-player .sc-controls .sc-pause {
 	display:none;
 }
 
-.sc-player .sc-controls .icon-play {
+.sc-player .sc-controls .sc-play {
 	display:block;
 }
 
-.sc-player.playing .sc-controls .icon-play {
+.sc-player.playing .sc-controls .sc-play {
 	display:none;
 }
 
-.sc-player.playing .sc-controls .icon-pause {
+.sc-player.playing .sc-controls .sc-pause {
 	display:block;
 }
 

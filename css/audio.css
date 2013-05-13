@@ -60,24 +60,28 @@
 	text-align:left
 }
 
+.sc-player .sc-controls a {
+	position:absolute;
+}
+
 .sc-player .sc-controls a i{
 	color: #333;
 }
 
 .sc-player .sc-controls .sc-pause {
-	visibility:hidden;
+	display:none;
 }
 
 .sc-player .sc-controls .sc-play {
-	visibility:visible;
+	display:block;
 }
 
 .sc-player.playing .sc-controls .sc-play {
-	visibility:hidden;
+	display:none;
 }
 
 .sc-player.playing .sc-controls .sc-pause {
-	visibility:visible;
+	display:block;
 }
 
 .sc-player .sc-controls:hover a {

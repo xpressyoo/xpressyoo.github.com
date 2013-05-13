@@ -69,6 +69,10 @@
 	display:none;
 }
 
+.sc-player .sc-controls .icon-play {
+	display:block;
+}
+
 .sc-player.playing .sc-controls .icon-play {
 	display:none;
 }

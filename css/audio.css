@@ -60,10 +60,6 @@
 	text-align:left
 }
 
-.sc-player .sc-controls a {
-	position:absolute;
-}
-
 .sc-player .sc-controls a i{
 	color: #333;
 }
@@ -82,6 +78,7 @@
 
 .sc-player.playing .sc-controls .sc-pause {
 	display:block;
+	margin-left:-10px
 }
 
 .sc-player .sc-controls:hover a {

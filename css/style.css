@@ -1190,7 +1190,7 @@ margin-left:0px
     }
     
     .picture {
-        margin-top: 80px;
+        margin-top: 40px;
         background-position: 45% -60px !important;
     }
     
@@ -1222,6 +1222,25 @@ margin-left:0px
         font-size: 80%;
     }
 
+.f2 .big {
+	font-size:1.3em
+	}
+
+.index .f2 h5 {
+	font-size:0.85em
+	}
+
+.index .feed li, .indd li {
+	display:block;
+	width:100%;
+	margin-bottom:40px
+	}
+
+.indd .mm {
+	float:none;
+	width:50%;
+	margin:0 auto
+	}
 
 .f1 {
 	padding:0 0 15px

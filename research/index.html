@@ -8,6 +8,7 @@
 <!--[if IE 7]>
 	<link rel="stylesheet" href="css/ie.css">
 <![endif]-->
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <!--META-->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -18,21 +19,18 @@
 <meta itemprop="name" content="Florian Bersier">
 <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
 <link rel="icon" type="image/x-icon" href="../favicon.ico" />
-<meta itemprop="image" content="http://cdn.florianbersier.com/res/100/thumbnail.png">
-<link rel="image_src" type="image/png" href="http://cdn.florianbersier.com/res/100/thumbnail.png" />
+<meta itemprop="image" content="../lib/research-thumb.png">
+<link rel="image_src" type="image/png" href="../lib/research-thumb.png" />
 <meta property="fb:admins" content="10150829234450007" />
 <meta property="fb:app_id" content="205602882797935" />
-<!-- Prefetch -->
-<link rel="prefetch" href="http://florianbersier.com/lib/ha.jpg">
-<link rel="prerender" href="http://florianbersier.com/lib/ha.jpg">
-<link rel="prefetch" href="http://florianbersier.com/lib/ab.jpg">
-<link rel="prerender" href="http://florianbersier.com/lib/ab.jpg">
 <!--Analytics-->
 <script>
-
   var _gaq = _gaq || [];
+  var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
   _gaq.push(['_setAccount', 'UA-12817064-1']);
   _gaq.push(['_setDomainName', 'florianbersier.com']);
+  _gaq.push(['_setAllowLinker', true]);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -40,18 +38,17 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
 </script>
 </head>
 <!--BODY-->
-<body>
+<body class="research">
 <div class="global">
 <!--NAV-->
-<div id="nav" class="fixed">
+<div id="nav" class="fixed" role="navigation">
 
 <a id="logo" class="" href="../" title="FB | Back home"></a>
 
-<ul role="navigation">
+<ul>
 <li><a class="" href="/about/">Bio</a>
 <li><a class="" href="/hacking/">Hacking</a>
 <li><a class="selected" href="/research/">Research</a>
@@ -60,91 +57,125 @@
 <li><a id="contact" href="#contact">Contact</a>
 <li><a id="back-top" class="mob" title="Scroll to Top"><i class="icon-chevron-up"></i> <span>top</span></a>
 </ul>
+<span id="legend" class="legp none">The car wash in "The Dark Lens" &copy; Cédric Delsaux (2011)</span>
 </div>
 <!--#NAV-->
-
 <!--Picture-->
-<div class="picture p1 transition" id="re">
-<span class="legp">The car wash in "The Dark Lens" &copy; Cédric Delsaux (2011)</span>
+<div class="picture p0 transition" id="re">
+<i id="infopic" class="icon-info"></i>
 </div>
 
 <div class="wrapper">
 <!--CONTENT-->
-<div class="content">
-<div class="left" role="main">
-<h2>Research &middot; Outline</h2>
+<div class="content" role="main">
 
-<p>The invention and democratization of the Web &ge; 2.0 has dramatically increased the diversity and quantity of Internet-powered interactions. Now, those interactions feature predominant idiosyncrasies (e.g. 1-shot type, asynchronous, geographically dispersed, anonymous, etc.) which represent a perfect fertilizer to maintain a large "garden" full of Akerlof’s Lemons<sup>1</sup> [<a href="http://elsa.berkeley.edu/~akerlof/" target="_blank">Akerlof</a>, 1970<sup>2</sup>]. To limit such a natural information asymmetry and encourage cooperation on the Internet, reputation mechanisms have emerged as an increasingly important component of online exchanges.</p>
+<div class="f1 green-bkg"><div>
+<ul class="ulno">
+<li class="f1a nob"><h3>PhD Candidate</pre></h3><br><a class="transition bor mob" href="http://oxford.academia.edu/FlorianBersier" title="My profile on Academia.edu" target="_blank"><i class="icon-book"></i> academia</a>
+	<ul class="socials mob">
+		<li><a href="https://twitter.com/xpressyoo" target="_blank" title="I tweet, sometimes"><i class="icon-twitter"></i></a>
+		<li><a href="https://facebook.com/florian.bersier" target="_blank" title="Zuck's Network..."><i class="icon-facebook"></i></a>
+		<li><a href="https://plus.google.com/111297306144520956414?rel=author" target="_blank" title="The circle of life à la Google"><i class="icon-google-plus"></i></a>
+		<li><a href="https://www.linkedin.com/in/florianbersier" target="_blank" title="You serious"><i class="icon-linkedin"></i></a>
+	</ul>
+<li class="f1b nob">I'm a Scatcherd Scholar at the <a href="http://www.oii.ox.ac.uk" target="_blank">Oxford Internet Institute</a>, University of Oxford, where I research the formation of reputation and trust in online economies. Specifically, my work aims at designing smarter and more trustworthy online reputation systems, and is funded by the Economic and Social Research Council, United Kingdom. I'm supervised by <a href="http://www.greg-taylor.co.uk" target="_blank">Dr Greg Taylor</a> and <a href="http://www.sbs.ox.ac.uk/research/people/Pages/NirVulkan.aspx" target="_blank">Dr Nir Vulkan</a>.<a href="#" class="green-txt transition" id="remo">more <i class="icon-angle-down"></i></a>
+</ul>
 
-<p>Nowadays, we decide to buy or download a good online because we have a belief that this good will correspond to our expectations. For instance, we choose to install an application on our Android phone or tablet because it has positive reviews, we choose to bid on an item on eBay because the seller has a favourable feedback score and so on and so forth. While the mechanisms for accumulating reputation are principally informal in offline settings, such mechanisms become structured online, making then possible their study and analysis. This appealing and crucial change gave birth to an important and growing literature about (online) reputation in the last decade or so, whose main focus is the ex-post effects of reputation for online interactions, that is the impact of a seller's reputation on auction prices or the development of cooperation within economies à la eBay. One can mention the works by <a href="http://www.personal.psu.edu/geb3/General/" target="_blank">Bolton</a>, <a href="http://luiscabral.org/" target="_blank">Cabral</a>, <a href="http://www.dellarocas.com/" target="_blank">Dellarocas</a>, <a href="http://ockenfels.uni-koeln.de/home.html" target="_blank">Ockenfels</a> and <a href="http://presnick.people.si.umich.edu/" target="_blank">Resnick</a>, among others.</p>
-
-<p>My D.Phil thesis proposes another perspective by adopting an ex-ante approach interested in analysing the mechanisms and determinants necessary to the very formation of reputation and the effects of the latter factors and dynamics on the derivation of electronic trust (eTrust hereafter). More particularly, I analyse and show both theoretically and empirically how the efficiency of an online reputation system depends on the characteristics of a good exchanged within the economy (e.g. price, depletability) and on the properties of the latter system (e.g. cost of entry, number of ratings made available). Finally, I introduce and develop a new type of reputation system that allows transferability of reputation and facilitates trust by weighting reputational scores, i.e. by ranking ratings based on the characteristics (e.g. age, gender, location) and the cross-economies history of interactions the reader of a rating and a ‘rater’ share. Besides its academic focus, I hope that my work will help design more context-aware rating systems and participate so in the building of more social efficient Internet economies.</p>
-
-<h3>DPhil Thesis</h3>
-<p>Bersier, F. (2013, exp), "From Online Reputation to eTrust". Oxford Internet Institute, University of Oxford.</p>
-
-<h3>Research Interests</h3>
-<p>Rating Systems, Online Reputation Formation, eTrust, Game Theory, Algorithmic Economics, Social Informatics.</p>
-
-<div class="footnotes">
-<h3>Footnotes and Links</h3>
-<p><sup>1</sup> Of course, this is a wordplay. The Market for Lemons explained on <a href="http://en.wikipedia.org/wiki/The_Market_for_Lemons" target="_blank" title="The Market for Lemons">Wikipedia</a>.</p>
-<p><sup>2</sup> Akerlof, G. A. (1970). The Market for Lemons. <i>Quarterly Journal of Economics</i>, 84(3):488-500.</p>
 </div>
-</div><!--#left-->
+<span class="f00"><i class="icon-lightbulb sm"></i></span>
+</div><!-- .f1 -->
 
-<div class="right">
-<h3><i class="icon-beaker bggreen"></i> Latest Papers</h3>
+<div class="f2" id="more">
+<div class="w">
+<div class="left nob">
+<h3><i class="icon-th-large"></i>Research Outline</h3>
 
-Section under development. Meanwhile, please check my <a href="http://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1488395" target="_blank">SSRN page</a>.
+<p>The invention and democratization of the Web &ge; 2.0 has dramatically increased the diversity and quantity of Internet-powered interactions. Now, those interactions feature predominant idiosyncrasies (e.g. 1-shot type, asynchronous, geographically dispersed, anonymous, etc.) which represent a perfect fertilizer to maintain a large "garden" full of Akerlof’s Lemons<sup id="sup1">1</sup> [<a href="http://elsa.berkeley.edu/~akerlof/" target="_blank">Akerlof</a>, 1970<sup id="sup2">2</sup>]. To limit such a natural information asymmetry and encourage cooperation on the Internet, reputation mechanisms have emerged as an increasingly important component of online exchanges.</p>
 
-</div><!--#right-->
+<p>Nowadays, we decide to buy a good or a service online because we have a belief that this good or service will correspond to our expectations. For instance, we choose to install an application on our smartphone because it has positive reviews, we choose to bid on an item on eBay because the seller has a favourable feedback score, we book a table in a restaurant because this restaurant is well rated on Yelp, and so on and so forth. While the mechanisms for accumulating reputation are principally informal in offline settings, such mechanisms become structured online, making then possible their study and analysis. This appealing and crucial change gave birth to an important and growing literature about (online) reputation in the last decade or so, whose main focus is the ex-post effects of reputation for online interactions, e.g., the impact of a seller's reputation on auction prices or the development of cooperation within economies à la eBay. One can mention the works by <a href="http://www.personal.psu.edu/geb3/General/" target="_blank">Bolton</a>, <a href="http://luiscabral.org/" target="_blank">Cabral</a>, <a href="http://www.dellarocas.com/" target="_blank">Dellarocas</a>, <a href="http://ockenfels.uni-koeln.de/home.html" target="_blank">Ockenfels</a> and <a href="http://presnick.people.si.umich.edu/" target="_blank">Resnick</a>, among others.</p>
+
+<p>My D.Phil thesis proposes another perspective by adopting an ex-ante approach interested in analysing the mechanisms and determinants necessary to the very formation of reputation and the effects of the latter factors and dynamics on the derivation of trust. More particularly, my research focuses on the design of rating systems adapted to the specificities of every online economy. Questions raised in the thesis are as follows: 
+<ol>
+<li>How many ratings to display in an online reputation system?
+<li>What rating scale to implement?
+<li>How to limit herding reporting mechanisms?
+</ol>
+
 </div>
-<!--#CONTENT-->
+
+<div class="right nob">
+<h3><i class="icon-th"></i>Academia</h3>
+
+<h4>DPhil Thesis</h4>
+<p>Bersier, F. (2013, exp), <i>From Online Reputation to eTrust</i>. Oxford Internet Institute, University of Oxford.</p>
+
+<h4>Research Interests</h4>
+<p>Rating Systems, Online Reputation, eTrust, Game Theory, Behavioural Economics, Algorithmic Economics, Social Informatics.</p>
+
+<h4>Research Sponsors</h4>
+<ul class="ul0">
+<li><i class="icon-shield"></i><a href="http://www.ox.ac.uk/feesandfunding/prospectivegrad/scholarships/university/scatcherd/" target="_blank">Schatcherd Scholarship</a>. This award, set up in 1993, helps to build links between Oxford and Europe, and is awarded on the basis of outstanding academic merit.
+<li><i class="icon-shield"></i><a href="http://www.esrc.ac.uk/" target="_blank">ESRC Studentship</a>, the British Economic and Social Research Council.
+</ul>
+</div>
+<div class="clear"></div>
+</div></div><!-- .f2 -->
+
+<div class="f3">
+<div class="w cen">
+<h3>Latest Publications</h3>
+
+<p class="center">Section coming soon. Meanwhile, please check my <a href="http://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1488395" target="_blank">SSRN page</a>.</p>
+</div>
+</div><!-- . f3 -->
+
+
+<div class="f4">
+<div class="w">
+Any comments or questions about my ongoing research ? <a id="talk" href="#contact">Let's talk</a> ...
+<div class="clear"></div>
+</div><a id="talk" href="#contact" class="f00"><i class="icon-comments-alt sm green-txt"></i></a></div><!-- .f4 -->
+
+
+</div><!-- .content -->
+
 
 <!--FOOTER-->
 <div class="clear" id="footer">
-<ul>
+<ul class="foot1">
 <li>&copy;<span id="yr"></span> Florian Bersier
-<li class="mob"><a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode" target="_blank">Legal stuff</a>
+<li><a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode" target="_blank">Legal stuff</a>
 <li><span class="myem"></span>
 <li class="mob"><a href="../sitemap.xml" target="_blank">Sitemap</a>
 <li class="mob"><a href="../humans.txt" target="_blank">Humans</a>
-<li class="no sp"><a href="https://twitter.com/xpressyoo" target="_blank" title="Florian on Twitter"><i class="icon-twitter"></i></a>
-<li class="no"><a href="https://facebook.com/florian.bersier" target="_blank" title="Florian on Facebook"><i class="icon-facebook"></i></a>
-<li class="no"><a href="https://plus.google.com/111297306144520956414?rel=author" target="_blank" title="Florian on Google+"><i class="icon-google-plus"></i></a>
-<li class="no"><a href="https://www.linkedin.com/in/florianbersier" target="_blank" title="Florian on Linkedin"><i class="icon-linkedin"></i></a>
-<li class="no"><a href="https://github.com/xpressyoo" target="_blank" title="Florian on Github"><i class="icon-github"></i></a>
 </ul>
-</div>
-<!--#FOOTER-->
-</div><!--#WRAP-->
-</div><!--#GLOBAL-->
+</div><!-- .footer -->
+</div><!-- .wrapper -->
+</div><!-- .global -->
+<!-- FOOTNOTES -->
+<div id="footnotes" role="note">
+<p id="psup1" class="none"><sup>1</sup> Of course, this is a wordplay. The Market for Lemons explained on <a href="http://en.wikipedia.org/wiki/The_Market_for_Lemons" target="_blank" title="The Market for Lemons">Wikipedia</a>.</p>
+<p id="psup2" class="none"><sup>2</sup> Akerlof, G. A. (1970). The Market for Lemons. <i class="ni">Quarterly Journal of Economics</i>, 84(3):488-500.</p>
+</div><!-- #footnotes -->
 
 <!--CONTACT-->
 <div id="contact-box" class="hidden">
-<a id="close" title="close window"><i class="icon-remove icon-large"></i></a>
-<div class="txt">
-<h2>Let's keep in touch</h2>
-<h3>By Email</h3>
-<p>For job enquiries, press information, research questions and stuff related to Gmelius or XpressYoo, please send a good 'ol email to <span id="myemb"></span>. FYI, my local time is close to the UTC one (<span id="time"></span>). Recruiter or head-hunter? I prefer reading emails containing as much information as possible about a job offer, e.g. name of the company, job's description, location and expected salary. Many thanks and looking forward to hearing from you!</p>
-
-<h3 class="two">By SNS</h3>
-<p>It would be nice to keep in touch, so don't hesitate to add me to your favourite network. The social platforms where I'm the most active are the following ones:</p>
-<div class="socials">
-<ul>
-<li><a href="https://twitter.com/xpressyoo" target="_blank" title="Florian on Twitter"><i class="icon-twitter-sign twitter"></i></a>
-<li><a href="https://facebook.com/florian.bersier" target="_blank" title="Florian on Facebook"><i class="icon-facebook-sign facebook"></i></a>
-<li><a href="https://plus.google.com/111297306144520956414?rel=author" target="_blank" title="Florian on Google+"><i class="icon-google-plus-sign googleplus"></i></a>
-<li><a href="https://www.linkedin.com/in/florianbersier" target="_blank" title="Florian on Linkedin"><i class="icon-linkedin-sign linkedin"></i></a>
-<li class="no"><a href="https://github.com/xpressyoo" target="_blank" title="Florian on Github"><i class="icon-github-sign github"></i></a>
-</ul>
-</div><!--#socials-->
-</div><!--#txt-->
+<a class="close" href=""><i class="icon-eye-open"></i><i class="icon-eye-close"></i> To close this window, <span class="mob">click</span><span class="mob1">tap</span> here<span class="mob"> or press Esc</span></a>
+<div class="insi">
+<span id="myemb"></span>
+<p>OR</p>
+<ul class="socials">
+<li><a href="https://twitter.com/xpressyoo" target="_blank" title="Contact me on Twitter"><i class="icon-twitter-sign twitter"></i></a>
+<li><a href="https://facebook.com/florian.bersier" target="_blank" title="Contact me on Facebook"><i class="icon-facebook-sign facebook"></i></a>
+<li><a href="https://plus.google.com/111297306144520956414?rel=author" target="_blank" title="Contact me on Google+"><i class="icon-google-plus-sign googleplus"></i></a>
+<li><a href="https://www.linkedin.com/in/florianbersier" target="_blank" title="Contact me on Linkedin"><i class="icon-linkedin-sign linkedin"></i></a>
+<li class="no"><a href="https://github.com/xpressyoo" target="_blank" title="Contact me on Github"><i class="icon-github-sign github"></i></a>
+</ul><!--#socials-->
+</div>
 </div><!--#contactbox-->
 
 <!--JS-->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script src="../js/global.js"></script>
 </body>
 </html>

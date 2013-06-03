@@ -18,8 +18,8 @@
 <meta itemprop="name" content="Florian Bersier">
 <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
 <link rel="icon" type="image/x-icon" href="../favicon.ico" />
-<meta itemprop="image" content="http://cdn.florianbersier.com/res/100/thumbnail.png">
-<link rel="image_src" type="image/png" href="http://cdn.florianbersier.com/res/100/thumbnail.png" />
+<meta itemprop="image" content="../lib/hacking-thumb.png">
+<link rel="image_src" type="image/png" href="../lib/hacking-thumb.png" />
 <meta property="fb:admins" content="10150829234450007" />
 <meta property="fb:app_id" content="205602882797935" />
 <!-- Prefetch -->
@@ -29,10 +29,12 @@
 <link rel="prerender" href="http://florianbersier.com/lib/re.jpg">
 <!--Analytics-->
 <script>
-
   var _gaq = _gaq || [];
+  var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
   _gaq.push(['_setAccount', 'UA-12817064-1']);
   _gaq.push(['_setDomainName', 'florianbersier.com']);
+  _gaq.push(['_setAllowLinker', true]);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -40,18 +42,17 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
 </script>
 </head>
 <!--BODY-->
-<body>
+<body class="hacking">
 <div class="global">
 <!--NAV-->
-<div id="nav" class="fixed">
+<div id="nav" class="fixed" role="navigation">
 
 <a id="logo" class="" href="../" title="FB | Back home"></a>
 
-<ul role="navigation">
+<ul>
 <li><a class="" href="/about/">Bio</a>
 <li><a class="selected" href="/hacking/">Hacking</a>
 <li><a class="" href="/research/">Research</a>
@@ -60,132 +61,165 @@
 <li><a id="contact" href="#contact">Contact</a>
 <li><a id="back-top" class="mob" title="Scroll to Top"><i class="icon-chevron-up"></i> <span>top</span></a>
 </ul>
+<span id="legend" class="legp none">California, USA</span>
 </div>
 <!--#NAV-->
 
 <!--Picture-->
-<div class="picture p1 transition" id="hac">
-<span class="legp">Hushang slays the Black Div, Iran (1441)</span>
+<div class="picture p0 transition" id="hac">
+<i id="infopic" class="icon-info"></i>
 </div>
 
-<div class="wrapper clear">
+<div class="wrapper">
 <!--CONTENT-->
-<div class="content">
-<div class="left" role="main">
-<h2>Hacking &middot; Quid</h2>
+<div class="content" role="main">
 
-<p>Nowadays, for most people, a <a href="http://www.cs.berkeley.edu/~bh/hacker.html" target="blank" title="Definition by Brian Harvey, UC Berkeley">hacker</a> is a programmer. This definition is not entirely accurate. A hacker is before everything an individual who seeks to solve problems, sometimes complex, by finding the simplest possible way. Hacking is about being innovative and creative whenever a problem has to be solved. Computer languages ​​are therefore tools and not the very function of the hacker.</p>
+<div class="f1 purple-bkg"><div>
+<ul class="ulno">
+<li class="f1a nob"><h3>Hello, world!</pre></h3><br><a class="transition bor mob" href="https://github.com/xpressyoo" title="My Github profile" target="_blank"><i class="icon-github"></i> my github</a>
+	<ul class="socials mob">
+		<li><a href="https://twitter.com/xpressyoo" target="_blank" title="I tweet, sometimes"><i class="icon-twitter"></i></a>
+		<li><a href="https://facebook.com/florian.bersier" target="_blank" title="Zuck's Network..."><i class="icon-facebook"></i></a>
+		<li><a href="https://plus.google.com/111297306144520956414?rel=author" target="_blank" title="The circle of life à la Google"><i class="icon-google-plus"></i></a>
+		<li><a href="https://www.linkedin.com/in/florianbersier" target="_blank" title="You serious"><i class="icon-linkedin"></i></a>
+	</ul>
+<li class="f1b nob"><strong>I make things</strong>.<br>Procrastination and curiosity are and have always been two key driving forces in my life. At the risk of sounding both naive and simplistic, I firmly believe that the Internet proposes one of the most efficient means to deal with present and future challenges faced by the human society as long as we encourage, guarantee and develop a technology that remains open and neutral.<a href="#" class="purple-txt transition" id="remo">more <i class="icon-angle-down"></i></a>
+</ul>
+
+</div>
+<span class="f00"><i class="icon-code sm"></i></span>
+</div><!-- .f1 -->
+
+<div class="f2" id="more">
+<div class="w">
+<div class="left nob">
+<h3><i class="icon-terminal"></i>Hacking &middot; Quid</h3>
+
+
+<p>What is a hacker? Nowadays, for most people, a <a href="http://www.cs.berkeley.edu/~bh/hacker.html" target="blank" title="Definition by Brian Harvey, UC Berkeley">hacker</a> is a programmer. This definition is not entirely accurate. A hacker is before everything an individual who seeks to solve problems, sometimes complex, by finding the simplest possible way. Hacking is about being innovative and creative whenever a problem has to be solved. Computer languages ​​are therefore tools and not the very function of the hacker.</p>
 
 <p>Note that hackers often have a pejorative image, mainly due to media that tend to mix up crackers and hackers. Hacking is a culture, or even a community, whose common values ​​are "open source", "net neutrality", democracy and a fairly libertarian view of society, while crackers are often wannabe hackers who use existing applications to break into systems. To quote <a href="http://www.catb.org/esr/faqs/hacker-howto.html#what_is" target="_blank">Eric S. Raymond</a>, hackers build things while crackers break them.</p>
 
-<h3>Philosophy</h3>
-
-<p>Certainly due to my training as a microeconomist, the vast majority of my works as a hacker tend to share a common denominator, <i>id est</i> human interactions within online environments. I'm especially interested in two dimensions of the latter interactions. The first dimension is mostly quantitative and is related to the flows of interactions occurring online while the second dimension is more qualitative and deals with the intrinsic features of e-interactions. To be concise and less abstractly, (i) I think of and develop systems that encourage and improve trust online (also known as eTrust) - a crucial determinant of every human interaction - and (ii) I create and modify user interfaces of online platforms seeking so to increase the productivity attached to every interaction.</p>
-
-<h3>Core Values</h3>
-
-<p>At the risk of sounding both naive and simplistic, I firmly believe that the Internet is one of the most efficient means to deal with present and future challenges faced by the Human society as long as we encourage, guarantee and develop a neutral and open network.</p>
-
-<h3>Interests & Life Goals</h3>
+<h4>Interests & Life Goals</h4>
 <p>The <a href="http://en.wikipedia.org/wiki/Internet_of_Things" target="_blank">Internet of Things</a> represents IMO the most natural and promising way of blurring further the borders between online and offline interactions. I'm really keen in developing tools and platforms that will rest on those technologies in order to simplify our lives. Besides, I'm also planning to go to Mars one day and to participate in the development of the first mass-produced <a href="http://en.wikipedia.org/wiki/Humanoid_robot" target="_blank">humanoid robot</a> ;-)</p>
 
-<h3>Skills</h3>
+<h4>Skills</h4>
 <p>In constant evolution.</p>
 
-<div class="footnotes">
-<h3>Recommended Readings</h3>
-<p><a href="http://www.cs.berkeley.edu/~bh/hacker.html" target="_blank">What is a Hacker?</a> by Brian Harvey.</p>
-<p><a href="http://catb.org/~esr/faqs/hacker-howto.html" target="_blank">How to Become a Hacker</a> by Eric Steven Raymond.</p>
-<p><a href="http://www.paulgraham.com/gh.html" target="_blank">Great Hackers</a> by Paul Graham.</p>
-<p><a href="http://developeronline.blogspot.com/2009/04/if-philosophers-were-programmers.html" target="_blank">If Philosophers Were Programmers</a> by Panefsky.
-</div><!-- #footnotes -->
-</div><!--#left-->
-
-<div class="right">
-<h3><i class="icon-github bgblack"></i> Github Profile</h3>
-<p>Feel free to visit my <a href="https://github.com/xpressyoo" target="_blank">Github profile</a> to find out what I'm working on right now.</p>
-
-<h3 class="spa"><i class="icon-fire bgorange"></i> Latest Projects</h3>
-
-<div class="right-box">
-	<div class="box-header" id="xpressyoo">
-		<h4><a target="_blank" href="https://xpressyoo.com">XpressYoo</a> <i class="icon-external-link"></i></h4>
-		<h5>January 2013 &#8211; now</h5>
-	</div>
-<p><i class="icon-quote-left gg"></i>Online Reputation Made Portable. Under development.</p>
 </div>
 
-<div class="right-box">
-	<div class="box-header" id="gmelius">
-		<h4><a target="_blank" href="http://gmelius.com">Gmelius&trade;</a> <i class="icon-external-link"></i></h4>
-		<h5>February 2011 &#8211; now</h5>
-	</div>
-<p><i class="icon-quote-left gg"></i>Gmelius is a cross-browser extension that proposes a better and cleaner Gmail&trade; inbox. Featured on top technology news sites such as TechCrunch, Lifehacker and MakeUseOf, etc. >100K daily active users, and growing.</p>
-</div>
+<div class="right nob">
+<h3><i class="icon-cogs"></i>Resources I like</h3>
 
-<div class="right-box">
-	<div class="box-header" id="obfuscator">
-		<h4><a target="_blank" href="http://rot13.florianbersier.com">Email Obfuscator</a> <i class="icon-external-link"></i></h4>
-		<h5>March 2012</h5>
-	</div>
-<p><i class="icon-quote-left gg"></i>An easy-to-use substitution cipher that encrypts via ROT13 email addresses to avoid them getting harvested by spam-bots while keeping the mailto: feature. It rests on JavaScript and includes a pure CSS fallback.</p>
-</div>
+<h4>Recommended Readings</h4>
+<ul class="ul0">
+<li><i class="icon-link"></i><a href="http://www.cs.berkeley.edu/~bh/hacker.html" target="_blank">What is a Hacker?</a> by Brian Harvey.
+<li><i class="icon-link"></i><a href="http://catb.org/~esr/faqs/hacker-howto.html" target="_blank">How to Become a Hacker</a> by Eric Steven Raymond.
+<li><i class="icon-link"></i><a href="http://www.paulgraham.com/gh.html" target="_blank">Great Hackers</a> by Paul Graham.
+<li><i class="icon-link"></i><a href="http://developeronline.blogspot.com/2009/04/if-philosophers-were-programmers.html" target="_blank">If Philosophers Were Programmers</a> by Panefsky.
+<li><i class="icon-paper-clip"></i><a href="" target="_blank">Untangling the Web [pdf]</a> by the National Security Agency - NSA/CSS (unclassified).
+</ul>
+<br>
+<h4>Selected Web Resources</h4>
+<ul class="ul0">
+<li><i class="icon-link"></i><a href="https://news.ycombinator.com" target="_blank">Hacker news</a>, a social news website  whose main focus is hacking & startups.
+<li><i class="icon-link"></i><a href="http://www.technologyreview.com/" target="_blank">MIT Technology Review</a>, technology news and analysis.
+<li><i class="icon-link"></i><a href="http://www.techcrunch.com" target="_blank">TechCrunch</a>, technology news and analysis.
+<li><i class="icon-link"></i><a href="http://hackaday.com/" target="_blank">Hack a Day</a>, hardware hacking.
+<li><i class="icon-link"></i><a href="http://lifehacker.com/" target="_blank">Lifehacker</a>, life hacking.
+<li><i class="icon-link"></i><a href="https://www.eff.org/" target="_blank">Electronic Frontier Foundation</a>, defending your rights in the digital world.
+<li><i class="icon-link"></i><a href="http://robohub.org/" target="_blank">Robohub</a>, Robotics news and analysis.
+<li><i class="icon-link"></i><a href="http://thisisnthappiness.com/" target="_blank">this isn't happiness&trade;</a>, Art, Photography, Design & Disappointment.
+<li><i class="icon-link"></i><a href="http://www.brainpicking.org/" target="_blank">BrainPickings.org</a>, "a human-powered discovery engine for interestingness".
+</ul>
 
-<div class="right-box">
-	<div class="box-header" id="widget">
-		<h4><a target="_blank" href="http://gplusapi.appspot.com">Google+ Widget</a> <i class="icon-external-link"></i></h4>
-		<h5>September 2011</h5>
-	</div>
-<p><i class="icon-quote-left gg"></i>Display a Google+ widget on any website or blog.</p>
 </div>
+<div class="clear"></div>
+</div></div><!-- .f2 -->
 
-</div><!--#right-->
+<div class="f3">
+<div class="w cen projects">
+<h3>Latest Personal Projects</h3>
+
+<ul class="ulno">
+<li class="f3a nob"><h4>XpressYoo</h4><h5>Coming soon</h5>
+<li class="trait mob">
+<li class="f3b mob"><h4><a href="https://xpressyoo.com/" target="_blank">xpressyoo.com</a></h4>
+A smarter centralized rating system that makes online reputation portable and reliable.
+</ul>
+
+<ul class="ulno">
+<li class="f3a nob"><h4>Gmelius&trade;</h4><h5>April 2012</h5>
+<li class="trait mob">
+<li class="f3b mob"><h4><a href="http://gmelius.com/" target="_blank">gmelius.com</a> - <a href="http://en.wikipedia.org/wiki/Gmelius" target="_blank">Wikipedia article</a></h4>
+Gmelius is a cross-browser extension that proposes a better and cleaner Gmail™ inbox. Gmelius has been featured in top technology news sites such as TechCrunch, Lifehacker, MakeUseOf, PC Magazine, and counts around 200k daily active users.
+</ul>
+
+<ul class="ulno">
+<li class="f3a nob"><h4>Email Obfuscator</h4><h5>January 2012</h5>
+<li class="trait mob">
+<li class="f3b mob"><h4><a href="http://rot13.florianbersier.com/" target="_blank">rot13.florianbersier.com</a> - <a href="https://en.wikipedia.org/wiki/Rot13#External_links" target="_blank">featured on Wikipedia</a></h4>
+An easy-to-use substitution cipher that encrypts via ROT13 email addresses to avoid them getting harvested by spam-bots while keeping the mailto: feature. It rests on JavaScript and includes a pure CSS fallback.
+</ul>
+
+<ul class="ulno">
+<li class="f3a nob"><h4>Google+ Widget</h4><h5>September 2011</h5>
+<li class="trait mob">
+<li class="f3b mob"><h4><a href="http://gplusapi.appspot.com/" target="_blank">gplusapi.appspot.com</a></h4>
+Display a Google+ widget on any website or blog. Considered as one of the top Google+ tools and apps (e.g., <a href="http://www.socialmediaexaminer.com/5-top-google-tools-and-apps-for-marketing-pros/">Social Media Examiner</a>).
+</ul>
+
+<p class="center"><i class="icon-desktop"></i> Portfolio website featuring non-personal projects available on <a href="http://be.net/bersier" target="_blank">Behance</a>.</p>
 </div>
-<!--#CONTENT-->
+</div><!-- . f3 -->
+
+
+<div class="f4">
+<div class="w">
+I used the git command <span id="commits" class="bold"></span> times during the last year to record changes to this website.
+<div class="clear"></div>
+</div><a href="https://github.com/xpressyoo" target="_blank" title="Follow me on Github" class="f00"><i class="icon-github purple-txt"></i></a></div><!-- .f4 -->
+
+
+</div><!-- .content -->
+
 
 <!--FOOTER-->
 <div class="clear" id="footer">
-<ul>
+<ul class="foot1">
 <li>&copy;<span id="yr"></span> Florian Bersier
-<li class="mob"><a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode" target="_blank">Legal stuff</a>
+<li><a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode" target="_blank">Legal stuff</a>
 <li><span class="myem"></span>
 <li class="mob"><a href="../sitemap.xml" target="_blank">Sitemap</a>
 <li class="mob"><a href="../humans.txt" target="_blank">Humans</a>
-<li class="no sp"><a href="https://twitter.com/xpressyoo" target="_blank" title="Florian on Twitter"><i class="icon-twitter"></i></a>
-<li class="no"><a href="https://facebook.com/florian.bersier" target="_blank" title="Florian on Facebook"><i class="icon-facebook"></i></a>
-<li class="no"><a href="https://plus.google.com/111297306144520956414?rel=author" target="_blank" title="Florian on Google+"><i class="icon-google-plus"></i></a>
-<li class="no"><a href="https://www.linkedin.com/in/florianbersier" target="_blank" title="Florian on Linkedin"><i class="icon-linkedin"></i></a>
-<li class="no"><a href="https://github.com/xpressyoo" target="_blank" title="Florian on Github"><i class="icon-github"></i></a>
 </ul>
-</div>
-<!--#FOOTER-->
-</div><!--#WRAP-->
-</div><!--#GLOBAL-->
+</div><!-- .footer -->
+</div><!-- .wrapper -->
+</div><!-- .global -->
+<!-- FOOTNOTES -->
+<div id="footnotes">
+
+</div><!-- #footnotes -->
 
 <!--CONTACT-->
 <div id="contact-box" class="hidden">
-<a id="close" title="close window"><i class="icon-remove icon-large"></i></a>
-<div class="txt">
-<h2>Let's keep in touch</h2>
-<h3>By Email</h3>
-<p>For job enquiries, press information, research questions and stuff related to Gmelius or XpressYoo, please send a good 'ol email to <span id="myemb"></span>. FYI, my local time is close to the UTC one (<span id="time"></span>). Recruiter or head-hunter? I prefer reading emails containing as much information as possible about a job offer, e.g. name of the company, job's description, location and expected salary. Many thanks and looking forward to hearing from you!</p>
-
-<h3 class="two">By SNS</h3>
-<p>It would be nice to keep in touch, so don't hesitate to add me to your favourite network. The social platforms where I'm the most active are the following ones:</p>
-<div class="socials">
-<ul>
-<li><a href="https://twitter.com/xpressyoo" target="_blank" title="Florian on Twitter"><i class="icon-twitter-sign twitter"></i></a>
-<li><a href="https://facebook.com/florian.bersier" target="_blank" title="Florian on Facebook"><i class="icon-facebook-sign facebook"></i></a>
-<li><a href="https://plus.google.com/111297306144520956414?rel=author" target="_blank" title="Florian on Google+"><i class="icon-google-plus-sign googleplus"></i></a>
-<li><a href="https://www.linkedin.com/in/florianbersier" target="_blank" title="Florian on Linkedin"><i class="icon-linkedin-sign linkedin"></i></a>
-<li class="no"><a href="https://github.com/xpressyoo" target="_blank" title="Florian on Github"><i class="icon-github-sign github"></i></a>
-</ul>
-</div><!--#socials-->
-</div><!--#txt-->
+<a class="close" href=""><i class="icon-eye-open"></i><i class="icon-eye-close"></i> To close this window, <span class="mob">click</span><span class="mob1">tap</span> here<span class="mob"> or press Esc</span></a>
+<div class="insi">
+<span id="myemb"></span>
+<p>OR</p>
+<ul class="socials">
+<li><a href="https://twitter.com/xpressyoo" target="_blank" title="Contact me on Twitter"><i class="icon-twitter-sign twitter"></i></a>
+<li><a href="https://facebook.com/florian.bersier" target="_blank" title="Contact me on Facebook"><i class="icon-facebook-sign facebook"></i></a>
+<li><a href="https://plus.google.com/111297306144520956414?rel=author" target="_blank" title="Contact me on Google+"><i class="icon-google-plus-sign googleplus"></i></a>
+<li><a href="https://www.linkedin.com/in/florianbersier" target="_blank" title="Contact me on Linkedin"><i class="icon-linkedin-sign linkedin"></i></a>
+<li class="no"><a href="https://github.com/xpressyoo" target="_blank" title="Contact me on Github"><i class="icon-github-sign github"></i></a>
+</ul><!--#socials-->
+</div>
 </div><!--#contactbox-->
 
 <!--JS-->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script src="../js/global.js"></script>
+<script src="../js/ha.js"></script>
 </body>
 </html>

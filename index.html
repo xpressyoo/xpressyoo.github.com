@@ -6,41 +6,32 @@
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <link rel="stylesheet" type="text/css" href="css/fonts.css" />
 <link rel="stylesheet" type="text/css" href="css/audio.css" />
-<link rel="stylesheet" type="text/css" href="css/hint.css" />
 <!--[if IE 7]>
 	<link rel="stylesheet" href="css/ie.css">
 <![endif]-->
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <!--META-->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="description" content="Florian Bersier is a PhD candidate at the Oxford Internet Institute, University of Oxford. Research interests: Online Rating systems, Reputation, eTrust." />
-<meta itemprop="description" content="Florian Bersier is a PhD candidate at the Oxford Internet Institute, University of Oxford. Research interests: Online Rating systems, Reputation, eTrust.">
+<meta name="description" content="Florian Bersier is an economist and PhD candidate at the Oxford Internet Institute, University of Oxford. Research domains: online Reputation, eTrust." />
+<meta itemprop="description" content="Florian Bersier is an economist and PhD candidate at the Oxford Internet Institute, University of Oxford. Research domains: online Reputation, eTrust.">
 <meta name="keywords" content="Florian, Bersier" />
 <meta name="author" content="Florian Bersier" />
 <meta itemprop="name" content="Florian Bersier">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 <link rel="icon" type="image/x-icon" href="favicon.ico" />
-<meta itemprop="image" content="thumb.jpg">
-<link rel="image_src" type="image/jpeg" href="thumb.jpg" />
-<!--Facebook-->
+<meta itemprop="image" content="../lib/index-thumb.png">
+<link rel="image_src" type="image/png" href="../lib/index-thumb.png" /
 <meta property="fb:admins" content="10150829234450007" />
 <meta property="fb:app_id" content="205602882797935" />
-<!--Twitter
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@xpressyoo">
-<meta name="twitter:creator" content="@xpressyoo">
-<meta name="twitter:url" content="http://florianbersier.com">
-<meta name="twitter:title" content="Florian Bersier">
-<meta name="twitter:description" content="Florian Bersier is a PhD candidate at the Oxford Internet Institute, University of Oxford. Research interests: Online Rating systems, Reputation, eTrust.">
--->
-<!-- Prefetch -->
-<link rel="prefetch" href="http://florianbersier.com/lib/ab.jpg">
-<link rel="prerender" href="http://florianbersier.com/lib/ab.jpg">
 <!--Analytics-->
 <script>
   var _gaq = _gaq || [];
+  var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
   _gaq.push(['_setAccount', 'UA-12817064-1']);
   _gaq.push(['_setDomainName', 'florianbersier.com']);
+  _gaq.push(['_setAllowLinker', true]);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -51,140 +42,133 @@
 </script>
 </head>
 <!--BODY-->
-<body>
+<body class="index">
 <div class="global">
 <!--NAV-->
-<div id="nav" class="ind">
+<div id="nav" class="fixed" role="navigation">
 
 <a id="logo" class="" href="../" title="FB | Back home"></a>
 
-<ul role="navigation">
+<ul>
 <li><a class="" href="/about/">Bio</a>
 <li><a class="" href="/hacking/">Hacking</a>
 <li><a class="" href="/research/">Research</a>
 <li><a class="" href="http://blog.florianbersier.com">Blog</a>
 <li><a class="mob" href="http://be.net/bersier" target="_blank">Folio</a>
 <li><a id="contact" href="#contact">Contact</a>
+<li><a id="back-top" class="mob" title="Scroll to Top"><i class="icon-chevron-up"></i> <span>top</span></a>
 </ul>
 </div>
 <!--#NAV-->
 
-<!--MAP & VIDEO-->
-<div id="vid" class="hidden">
-	<span id="live"><i class="icon-facetime-video green"></i>Live streaming</span>
-	<video autoplay></video>
-	<span class="legp"><i class="icon-lock"></i>No data is stored. Only you can see this.</span>
+<!--Intro-->
+<div id="intro" class="picture p1 transition">
+<div id="artmap"></div>
 </div>
 
-<div id="artmap">
 
-	<div id="infos">
-		<div class="infotab hint hint--success hint--left" id="whym" data-hint="">
-			<div id="geo" class="bggreen"><i class="icon-map-marker"></i>&nbsp; <span id="distance">N/A</span></div>
-			<div class="t shadow"><span id="distanced">Please allow geolocation.</span></div>
-			<div class="t2"><i class="icon-question-sign"></i></div>
-		</div>
-		
-		<div class="infotab hint hint--info hint--left" id="whyb" data-hint="">
-			<div id="geek" class="bgblue"><span id="stars"></span><span id="nostars"></span></div>
-			<div class="t shadow">Your geek score<span id="grade"></span> <i class="icon-question-sign"></i></div>
-			<div class="t2"><i class="icon-question-sign"></i></div>
-		</div>
-		
+<div class="wrapper">
+<!--CONTENT-->
+<div class="content" role="main">
+
+<div class="f2" id="more">
+<!--Webcam-->
+<div id="webcam">
+	<div id="camsignal" class="off"><i class="icon-bullseye"></i></div>
+	<div id="vid">
+	<div id="vidin">
+		<span>say hi*</span>
+		<a id="webcambtn"><i class="icon-play-circle"></i></a>
+		<p>* Play with your webcam. No data stored.</p>
 	</div>
-</div>
-<!--#MAP-->
-
-<div class="wrap">
-<div id="hide" class="bkgclear shadow">
-	
-	<div id="sc" class="noa">
-		<a href="http://soundcloud.com/deadcruiser/nightcall" class="sc-player"></a>
+		<video autoplay class="hidden"></video>
 	</div>
-	<div id="webfollow">
-		<a id="webcambtn" class="gradient transition first"><i class="icon-camera"></i><span>Say cheers</span></a>
-		<a id="followbtn" class="gradient transition"><i class="icon-retweet"></i>Follow me</a>
-	</div>
-</div>
+</div><!--#webcam-->
+<h3 class="big"><span id="hello"></span> ! How is life in <span id="country"></span> ?</h3>
+<h5><i class="icon-map-marker"></i> The aerial distance between you and me is ca. <span id="distance"></span></h5>
+<div class="w">
+<h3>Popular articles published on the #<a href="http://blog.florianbersier.com/">Weblog</a> <i class="icon-angle-down"></i></h3>
 
-<!--INTRO-->
-<div id="intro">
+<div class="sep electric-bkg"></div>
 
-<ul class="titles">
-<li><h2>Biography</h2><h3>Libertarian and Geek</h3>
-<li><h2>Hacking</h2><h3>Hacker and Startup Founder</h3>
-<li><h2>Research</h2><h3>Behavioral Economic Engineer</h3>
-<li><h2>Portfolio</h2><h3>Freelance Web Developer</h3>
+<ul class="ulno feed">
+<li>
+	<div class="imm" style="background:url('../lib/blog/when-robots-meet-internet.jpg') no-repeat 0 0"></div>
+	<h4>WHEN ROBOTS MEET THE INTERNET</h4>
+	<p>How the Internet will make robotics part of our everyday lives. <a href="http://blog.florianbersier.com/when-robots-meet-internet/">Read it <i class="icon-angle-right"></i></a></p>
+<li>
+	<div class="imm" style="background:url('../lib/blog/implementation-social-sharing-jekyll.jpg') no-repeat 0 0"></div>
+	<h4>IMPLEMENTATION OF SOCIAL SHARING INTO JEKYLL</h4>
+	<p>How to add social sharing buttons to a Jekyll Powered Blog. <a href="http://blog.florianbersier.com/implementation-social-sharing-jekyll">Read it <i class="icon-angle-right"></i></a></p>
+<li>
+	<div class="imm" style="background:url('../lib/blog/etrust-homo-facebookiens.jpg') no-repeat 0 0"></div>
+	<h4>HOW HOMO-FACEBOOKIENS WILL KILL HOMO-SAPIENS?</h4>
+	<p>How Facebook Envisions the Future of Our Digital Lives And Why It's Not a Good Idea. <a href="http://blog.florianbersier.com/etrust-homo-facebookiens">Read it <i class="icon-angle-right"></i></a></p>
 </ul>
 
-<ul class="mor">
-<li><a href="/about/" class="more gradient bga transition">more <i class="icon-angle-right"></i></a>
-<li><a href="/hacking/" class="more gradient bgo transition">more <i class="icon-angle-right"></i></a>
-<li><a href="/research/" class="more gradient bgg transition">more <i class="icon-angle-right"></i></a>
-<li><a href="http://be.net/bersier" target="_blank" class="more gradient bgb transition">more <i class="icon-angle-right"></i></a>
-</ul>
+<div class="sep2"></div>
 
-<ul class="text" role="main">
-<li><h3>Libertarian and Geek</h3>
-<p>I'm a DPhil (read PhD) candidate at the Oxford Internet Institute, University of Oxford, a so-called "geek" and the founder of <a href="http://gmelius.com" target="_blank">Gmelius</a>&trade; and <a href="http://xpressyoo.com" target="_blank">XpressYoo</a>.</p>
-<a href="/about/" class="more gradient bga transition">more <i class="icon-chevron-right"></i></a>
-<li><h3>Hacker and Startup Founder</h3>
-<p>I wish to make available products or services capable of blurring the borders between online and offline human interactions.</p>
-<a href="/hacking/" class="more gradient bgo transition">more <i class="icon-chevron-right"></i></a>
-<li><h3>Behavioral Economic Engineer</h3>
+<h3>Howdy ! I'm Florian <i class="icon-angle-down"></i></h3>
+
+</div></div><!-- .f2 -->
+
+<div class="f3">
+<div class="w cen">
+<ul class="ulno indd">
+<li><h4>About</h4>
+<p>I'm a DPhil (read PhD) candidate at the Oxford Internet Institute, University of Oxford, a so-called "geek" and the founder of Gmelius™ and XpressYoo.</p>
+<a class="mm electric-bkg transition" href="/about/">learn more</a>
+<li><h4>Hacking</h4>
+<p>I make things. Procrastination and curiosity are and have always been two key driving forces in my life.<br><br></p>
+<a class="mm electric-bkg transition" href="/hacking/">learn more</a>
+<li><h4>Research</h4>
 <p>I research the formation of reputation and trust in online economies, aiming for the development of smarter and more trustworthy rating systems.</p>
-<a href="/research/" class="more gradient bgg transition">more <i class="icon-chevron-right"></i></a>
-<li><h3>Freelance Web Developer</h3>
-<p>I have more than <span id="exp"></span> years experience in web development, a strong taste for perfection and a sound love for cutting-edge solutions.</p>
-<a href="http://be.net/bersier" target="_blank" class="more gradient bgb transition">more <i class="icon-chevron-right"></i></a>
+<a class="mm electric-bkg transition" href="/research/">learn more</a>
 </ul>
-
 </div>
-<!--#INTRO-->
+</div><!-- . f3 -->
+
+<div id="soundcloud" class="f4">
+	<div id="sc" class="noa w">
+		<a href="http://soundcloud.com/deadcruiser/nightcall" id="scpl" class="sc-player"></a>
+<div class="clear"></div>
+</div>
+<a href="http://soundcloud.com/deadcruiser/nightcall" title="This track on SoundCloud" target="_blank" class="f00"><i class="icon-headphones electric-txt"></i></a>
+</div><!-- .f4 -->
+
+</div><!-- .content -->
 
 <!--FOOTER-->
 <div class="clear" id="footer">
-<ul>
+<ul class="foot1">
 <li>&copy;<span id="yr"></span> Florian Bersier
-<li class="mob"><a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode" target="_blank">Legal stuff</a>
+<li><a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode" target="_blank">Legal stuff</a>
 <li><span class="myem"></span>
 <li class="mob"><a href="../sitemap.xml" target="_blank">Sitemap</a>
 <li class="mob"><a href="../humans.txt" target="_blank">Humans</a>
-<li class="no sp"><a href="https://twitter.com/xpressyoo" target="_blank" title="Florian on Twitter"><i class="icon-twitter"></i></a>
-<li class="no"><a href="https://facebook.com/florian.bersier" target="_blank" title="Florian on Facebook"><i class="icon-facebook"></i></a>
-<li class="no"><a href="https://plus.google.com/111297306144520956414?rel=author" target="_blank" title="Florian on Google+"><i class="icon-google-plus"></i></a>
-<li class="no"><a href="https://www.linkedin.com/in/florianbersier" target="_blank" title="Florian on Linkedin"><i class="icon-linkedin"></i></a>
-<li class="no"><a href="https://github.com/xpressyoo" target="_blank" title="Florian on Github"><i class="icon-github"></i></a>
 </ul>
-</div>
-<!--#FOOTER-->
-</div><!--#WRAP-->
-</div><!--#GLOBAL-->
+</div><!-- .footer -->
+</div><!-- .wrapper -->
+</div><!-- .global -->
 
 <!--CONTACT-->
 <div id="contact-box" class="hidden">
-<a id="close" title="close window"><i class="icon-remove icon-large"></i></a>
-<div class="txt">
-<h2>Let's Keep in Touch</h2>
-<h3>By Email</h3>
-<p>For job enquiries, press information, research questions and stuff related to Gmelius or XpressYoo, please send a good 'ol email to <span id="myemb"></span>. FYI, my local time is close to the UTC one (<span id="time"></span>). Recruiter or head-hunter? I prefer reading emails containing as much information as possible about a job offer, e.g. name of the company, job's description, location and expected salary. Many thanks and looking forward to hearing from you!</p>
-
-<h3 class="two">By SNS</h3>
-<p>It would be nice to keep in touch, so don't hesitate to add me to your favourite network. The social platforms where I'm the most active are the following ones:</p>
-<div class="socials">
-<ul>
-<li><a href="https://twitter.com/xpressyoo" target="_blank" title="Florian on Twitter"><i class="icon-twitter-sign twitter"></i></a>
-<li><a href="https://facebook.com/florian.bersier" target="_blank" title="Florian on Facebook"><i class="icon-facebook-sign facebook"></i></a>
-<li><a href="https://plus.google.com/111297306144520956414?rel=author" target="_blank" title="Florian on Google+"><i class="icon-google-plus-sign googleplus"></i></a>
-<li><a href="https://www.linkedin.com/in/florianbersier" target="_blank" title="Florian on Linkedin"><i class="icon-linkedin-sign linkedin"></i></a>
-<li class="no"><a href="https://github.com/xpressyoo" target="_blank" title="Florian on Github"><i class="icon-github-sign github"></i></a>
-</ul>
-</div><!--#socials-->
-</div><!--#txt-->
+<a class="close" href=""><i class="icon-eye-open"></i><i class="icon-eye-close"></i> To close this window, <span class="mob">click</span><span class="mob1">tap</span> here<span class="mob"> or press Esc</span></a>
+<div class="insi">
+<span id="myemb"></span>
+<p>OR</p>
+<ul class="socials">
+<li><a href="https://twitter.com/xpressyoo" target="_blank" title="Contact me on Twitter"><i class="icon-twitter-sign twitter"></i></a>
+<li><a href="https://facebook.com/florian.bersier" target="_blank" title="Contact me on Facebook"><i class="icon-facebook-sign facebook"></i></a>
+<li><a href="https://plus.google.com/111297306144520956414?rel=author" target="_blank" title="Contact me on Google+"><i class="icon-google-plus-sign googleplus"></i></a>
+<li><a href="https://www.linkedin.com/in/florianbersier" target="_blank" title="Contact me on Linkedin"><i class="icon-linkedin-sign linkedin"></i></a>
+<li class="no"><a href="https://github.com/xpressyoo" target="_blank" title="Contact me on Github"><i class="icon-github-sign github"></i></a>
+</ul><!--#socials-->
+</div>
 </div><!--#contactbox-->
 
 <!--JS-->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script><!--jQuery-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script src="http://maps.google.com/maps/api/js?key=AIzaSyC3Fos8rWwIPqoGWXOPLv5uABcHirt_suo&amp;v=3.7&amp;sensor=true&amp;libraries=geometry"></script>
 <script src="js/index.js"></script>
 <script src="js/sc-api.js"></script>

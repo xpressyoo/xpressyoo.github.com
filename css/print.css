@@ -1,0 +1,6 @@
+#nav,#intro2,#reac,#share,#contact,.rs,.separator,#footer,#end{display:none}
+body{border-bottom:0}
+.wrapper{width:100%;}
+.wrapper:after{content:"Author: Florian Bersier - florianbersier.com - hi@florianbersier.com";}
+ol{text-align:left}
+

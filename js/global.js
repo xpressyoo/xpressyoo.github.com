@@ -7,65 +7,57 @@ $(function() {
 	$("#myemb").append('<n uers="znvygb:sybev@aorefvre.pbz" ery="absbyybj" gnetrg="_oynax">sybev@aorefvre.pbz</n>'.replace(/[a-zA-Z]/g, function(d) {
 		return String.fromCharCode((d <= "Z" ? 90 : 122) >= (d = d.charCodeAt(0) + 13) ? d : d - 26)
 	}));
+	// More Scrolling
+	$("#remo").on('click', function(event) {
+		$('html, body').animate({
+			scrollTop: $("#more").offset().top
+		}, 1000);
+	});
+	// Legend Pictures
+	$("#infopic").hover(
 
-// More Scrolling
+	function() {
+		$('#logo,#nav ul').fadeOut(200);
+		$('#legend').fadeIn(400).removeClass('none');
+	}, function() {
+		$('#legend').fadeOut(200).addClass('none');
+		$('#logo,#nav ul').fadeIn(400);
+	});
+	// Footnotes
+	$("sup").hover(
 
-$("#remo").on('click',function(event){
-	$('html, body').animate({scrollTop:$("#more").offset().top},1000);
+	function() {
+		$('#footnotes #p' + $(this).attr('id')).fadeIn(200).delay(4000).fadeOut(300).addClass('none');
+	}, function() {
+		//$('#footnotes #p' + $(this).attr('id') ).addClass('none');
+	});
+	// End Footnotes
+	// Lightbox
+	$('a.lightbox').on('click', function() {
+		var imgcid = document.getElementById('prix');
+		var idimg = imgcid.getAttribute('data-img');
+		$(".global").addClass("contact-active");
+		$('#lightbox').removeClass('none');
+		$('#lightbox div').css('background', 'url(\'../lib/' + idimg + '\') no-repeat top center');
 	});
 
-// Legend Pictures
+	function closeLight() {
+		$('#lightbox div').css('background', 'none');
+		$(".global").removeClass("contact-active");
+		$('#lightbox').addClass('none');
+	}
 
-$("#infopic").hover(
-
- function () {
-    $('#logo,#nav ul').fadeOut(200);
-    $('#legend').fadeIn(400).removeClass('none');
-    
-  },
-  function () {
-    $('#legend').fadeOut(200).addClass('none');
-    $('#logo,#nav ul').fadeIn(400);
-}
-);
-
-// Footnotes
-$("sup").hover(
- function () {
-    $('#footnotes #p' + $(this).attr('id')).fadeIn(200).delay(4000).fadeOut(300).addClass('none');
-  },
-  function () {
-	//$('#footnotes #p' + $(this).attr('id') ).addClass('none');
-});
-// End Footnotes
-
-// Lightbox
-$('a.lightbox').on('click', function() {
-var imgcid = document.getElementById('prix');
-var idimg = imgcid.getAttribute('data-img');
-	$(".global").addClass("contact-active");
-	$('#lightbox').removeClass('none');
-	$('#lightbox div').css('background','url(\'../lib/' + idimg + '\') no-repeat top center');
-
-});
-
-function closeLight() {
-	$('#lightbox div').css('background','none');
-	$(".global").removeClass("contact-active");
-	$('#lightbox').addClass('none');
-}
-
-function closeContact() {
+	function closeContact() {
 		$("#contact-box").hide().addClass("hidden");
 		$("#contact").removeClass("selected");
 		$(".global").removeClass("contact-active");
-}
-
-$('#lightbox .close').on('click', function() { closeLight() });
-// End Lightbox
-
-// Contact Box
-$("#contact, #talk, #ttalk, #followbtn, #contact-box .close").on("click", function() {
+	}
+	$('#lightbox .close').on('click', function() {
+		closeLight()
+	});
+	// End Lightbox
+	// Contact Box
+	$("#contact, #talk, #ttalk, #followbtn, #contact-box .close").on("click", function() {
 		if ($("#contact-box").hasClass("hidden")) {
 			$("#contact").addClass("selected");
 			$(".global").addClass("contact-active");
@@ -74,7 +66,7 @@ $("#contact, #talk, #ttalk, #followbtn, #contact-box .close").on("click", functi
 			closeContact()
 		}
 	});
-$(document).keyup(function(d) {
+	$(document).keyup(function(d) {
 		if (d.keyCode === 27) {
 			closeContact();
 			closeLight();
@@ -92,9 +84,8 @@ $(document).keyup(function(d) {
 	if (n < 10) {
 		n = "0" + n
 	}
-	$("#time").append( (g + 1) + ":" + n);
-
-// Back to top
+	$("#time").append((g + 1) + ":" + n);
+	// Back to top
 	$(window).scroll(function() {
 		if ($(this).scrollTop() > 100) {
 			$("#back-top").fadeIn()
@@ -112,9 +103,8 @@ $(document).keyup(function(d) {
 			return false
 		})
 	});
-//End Back to top
-
-// Time ago
+	//End Back to top
+	// Time ago
 	var h = "en";
 	var r = "a year";
 	var p = "years";
@@ -183,6 +173,7 @@ $(document).keyup(function(d) {
 				var J = Q / 60;
 				var H = J / 24;
 				var N = H / 365;
+
 				function P(U, S) {
 					var T = F.isFunction(U) ? U(S, L) : U;
 					var R = (K.numbers && K.numbers[S]) || S;
@@ -216,6 +207,7 @@ $(document).keyup(function(d) {
 			}
 			return d
 		};
+
 		function G() {
 			var d = B(this);
 			if (!isNaN(d.datetime)) {
@@ -223,6 +215,7 @@ $(document).keyup(function(d) {
 			}
 			return this
 		}
+
 		function B(H) {
 			H = F(H);
 			if (!H.data("timeago")) {
@@ -236,18 +229,18 @@ $(document).keyup(function(d) {
 			}
 			return H.data("timeago")
 		}
+
 		function C(d) {
 			return D.inWords(E(d))
 		}
+
 		function E(d) {
 			return (new Date().getTime() - d.getTime())
 		}
 		document.createElement("abbr");
 		document.createElement("time")
 	}(jQuery));
-
 });
-
 // Raptor
 (function(a) {
 	a.fn.raptorize = function(b) {
@@ -273,6 +266,7 @@ $(document).keyup(function(d) {
 				right: "0",
 				display: "block"
 			});
+
 			function k() {
 				f = true;
 				if (i) {

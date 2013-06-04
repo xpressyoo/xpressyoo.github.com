@@ -1190,10 +1190,10 @@ margin-left:0px
     }
     
     .picture {
-        margin-top: 60px;
-        background-position: 45% -60px !important;
+        margin-top: 40px;
+        background-position: 45% -40px !important;
     }
-    
+
     #logo {
         display: block;
         position: relative;
@@ -1278,7 +1278,7 @@ margin-left:0px
 	padding-right:0 !important;
 	}
 
-.mob, .sc-player h4 {
+.mob, .sc-player h4, #infopic {
 	display:none !important
 	}
 

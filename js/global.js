@@ -65,7 +65,7 @@ $('#lightbox .close').on('click', function() { closeLight() });
 // End Lightbox
 
 // Contact Box
-$("#contact, #talk, #followbtn, #contact-box .close").on("click", function() {
+$("#contact, #talk, #ttalk, #followbtn, #contact-box .close").on("click", function() {
 		if ($("#contact-box").hasClass("hidden")) {
 			$("#contact").addClass("selected");
 			$(".global").addClass("contact-active");

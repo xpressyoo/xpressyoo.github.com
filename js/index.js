@@ -115,7 +115,7 @@ $(function() {
 				var flightPath = new google.maps.Polyline({
 					path: flightPlanCoordinates,
 					strokeColor: "#aaa",
-					strokeOpacity: 0.6,
+					strokeOpacity: 0,
 					geodesic: true,
 					strokeWeight: 4
 				});

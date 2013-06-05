@@ -236,9 +236,13 @@ $(function() {
 
 	function onFailSoHard(e) {
 		if (e.code == 1) {
-			console.log('You denied access to your camera.');
+			$('#say').empty().append('Error');
+			$('#webcambtn').empty().append('<i id="warns" class="icon-warning-sign"></i>');
+			$('#descam').empty().append('You denied access to your camera.')
 		} else {
-			alert('Feature not supported in your browser. Install Chrome!');
+			$('#say').empty().append('Error');
+			$('#webcambtn').empty().append('<i id="warns" class="icon-warning-sign"></i>');
+			$('#descam').empty().append('Feature not supported in your browser.')
 		}
 	}
 	navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;

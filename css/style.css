@@ -1314,6 +1314,10 @@ i sup {
 		font-size: 80%;
 	}
 	
+	#nav li:after {
+	content: "";
+	}
+	
 	#nav li:hover a {
 		border-top: 0;
 		border-bottom: 5px solid #000;

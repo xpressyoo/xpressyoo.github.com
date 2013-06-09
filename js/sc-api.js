@@ -523,7 +523,7 @@
         if (T || I.customClass) {
             M.addClass(T).addClass(I.customClass)
         }
-        M.find(".sc-controls").append('<a href="#play" class="sc-play"><i class="icon-play"></i></a> <a href="#pause" class="sc-pause hidden"><i class="icon-pause"></i></a>').end().append('<a href="#info" class="sc-info-toggle">Info</a>').append('<div class="sc-scrubber"></div>').find(".sc-scrubber").append('<div class="sc-volume-slider"><span class="sc-volume-status" style="width:' + m + '%"></span></div>').append('<div class="sc-time-span"><div class="sc-waveform-container"></div><div class="sc-buffer"></div><div class="sc-played"></div></div>').append('<div class="sc-time-indicators"><i class="icon-volume-down"></i><span class="sc-position"></span> | <span class="sc-duration"></span></div>');
+        M.find(".sc-controls").append('<a href="#play" class="sc-play"><i class="icon-play"></i></a> <a href="#pause" class="sc-pause"><i class="icon-pause"></i></a>').end().append('<a href="#info" class="sc-info-toggle">Info</a>').append('<div class="sc-scrubber"></div>').find(".sc-scrubber").append('<div class="sc-volume-slider"><span class="sc-volume-status" style="width:' + m + '%"></span></div>').append('<div class="sc-time-span"><div class="sc-waveform-container"></div><div class="sc-buffer"></div><div class="sc-played"></div></div>').append('<div class="sc-time-indicators"><i class="icon-volume-down"></i><span class="sc-position"></span> | <span class="sc-duration"></span></div>');
         l(M, Q, I.apiKey);
         M.bind("onTrackDataLoaded.scPlayer", function(V) {
             var U = V.playerObj.tracks;

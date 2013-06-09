@@ -33,13 +33,10 @@ $(function() {
 	});
 	// End Footnotes
 	// Lightbox
-	$('a.lightbox').on('click', function() {
-		var imgcid = document.getElementById('prix');
-		var idimg = imgcid.getAttribute('data-img');
+	function openLight() {
 		$(".global").addClass("contact-active");
 		$('#lightbox').removeClass('none');
-		$('#lightbox div').css('background', 'url(\'../lib/' + idimg + '\') no-repeat top center');
-	});
+	}
 
 	function closeLight() {
 		$('#lightbox div').css('background', 'none');
@@ -55,6 +52,14 @@ $(function() {
 	$('#lightbox .close').on('click', function() {
 		closeLight()
 	});
+
+	$('.about a.lightbox').on('click', function() {
+		var imgcid = document.getElementById('prix');
+		var idimg = imgcid.getAttribute('data-img');
+		openLight();
+		$('#lightbox div').css('background', 'url(\'../lib/' + idimg + '\') no-repeat top center');
+	});
+
 	// End Lightbox
 	// Contact Box
 	$("#contact, #talk, #ttalk, #followbtn, #contact-box .close").on("click", function() {

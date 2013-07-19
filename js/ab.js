@@ -1,7 +1,7 @@
 $(function() {
 // Twitter API Call
 	$.ajax({
-		url: "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=xpressyoo&count=1"
+		url: "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=xpressyoo&count=1",
 		//https://api.twitter.com/1/statuses/user_timeline.json?include_entities=false&include_rts=false&screen_name=xpressyoo&count=1
 		dataType: "jsonp",
 		success: function(D) {

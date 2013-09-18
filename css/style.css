@@ -555,8 +555,8 @@ strong,b,.bold {
 #vid video {
 	width: 100% !important;
 	height: auto !important;
-	-webkit-filter: invert(100%);
-	filter: url(#blur-effect-1);
+	/*-webkit-filter: invert(100%);
+	filter: url(#blur-effect-1);*/
 }
 
 .big {
@@ -1269,7 +1269,7 @@ i sup {
 }
 
 /* MOBILE */
-@media only screen and (max-width: 48.5em) {
+@media only screen and (max-width: 49em) {
 	#nav {
 		height: auto;
 		background-color: #1f1f1f;

@@ -760,7 +760,7 @@ strong,b,.bold {
 }
 
 #remo:hover {
-	background-color: #fff !important;
+	background-color: #fff;
 }
 
 i.xl {

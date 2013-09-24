@@ -759,6 +759,10 @@ strong,b,.bold {
 	color:#fff;
 }
 
+#remo:hover {
+	background-color: #fff;
+}
+
 i.xl {
 	font-size: 55px;
 }

@@ -217,8 +217,25 @@ I used the git command <span id="commits" class="bold"></span> times during the 
 </div><!--#contactbox-->
 
 <!--JS-->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="../js/global.js"></script>
-<script src="../js/ha.js"></script>
+<script>
+$(function() {
+	// Github API call
+	$.ajax({
+		url: "https://api.github.com/repos/xpressyoo/xpressyoo.github.com/stats/participation",
+		dataType: "jsonp",
+		success: function(returndata) {
+			var len = parseInt(returndata['data']['all']['length']);
+			var total = 0;
+			for (var i = 0; i < len; i++) {
+				total += parseInt(returndata['data']['all'][i]);
+			}
+			$("#commits").append(total);
+		}
+	});
+	// End Github
+});
+</script>
 </body>
 </html>

@@ -190,6 +190,10 @@ figcaption:before {
 	display: none;
 }
 
+.nonei {
+	display: none !important;
+}
+
 p,li {
 	line-height: 1.4em;
 }

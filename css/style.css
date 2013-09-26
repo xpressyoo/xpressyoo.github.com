@@ -353,7 +353,7 @@ strong,b,.bold {
 	font-weight: 400;
 	display: inline-block;
 	border-top: 3px solid transparent;
-	outline: 0;
+	outline: 0
 }
 
 .scr #nav, .scr #nav ul {

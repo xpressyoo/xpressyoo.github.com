@@ -386,6 +386,10 @@ strong,b,.bold {
 	border-top: 5px solid #3dad75;
 }
 
+.blog #nav li a.selected {
+	border-top: 5px solid #ff6600;
+}
+
 #back-top {
 	position: absolute;
 	right: 0;

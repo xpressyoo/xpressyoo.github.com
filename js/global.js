@@ -93,9 +93,11 @@ $(function() {
 	// Back to top
 	$(window).scroll(function() {
 		if ($(this).scrollTop() > 100) {
+			$("body").addClass("scr");
 			$("#back-top").fadeIn()
 		} else {
-			$("#back-top").fadeOut()
+			$("#back-top").fadeOut();
+			$("body").removeClass("scr");
 		}
 	});
 	$(window).load(function() {

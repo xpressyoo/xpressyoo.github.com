@@ -346,19 +346,20 @@ strong,b,.bold {
 }
 
 #nav li a {
-	padding: 0 23px 4px;
+	padding: 1px 23px 3px;
 	color: #fff;
 	font-size: 13px;
-	line-height: 36px;
+	line-height: 38px;
 	font-weight: 400;
 	display: inline-block;
-	border-top: 5px solid transparent;
+	border-top: 3px solid transparent;
 	outline: 0;
 }
 
 .scr #nav, .scr #nav ul {
 	height:33px;
 }
+
 
 .scr #logo {
 	transform: scale(.8);
@@ -368,7 +369,7 @@ strong,b,.bold {
 }
 
 .scr #nav li a {
-	line-height:23px
+	line-height:25px
 	}
 
 #nav li:after {
@@ -381,7 +382,7 @@ strong,b,.bold {
 }
 
 #nav li:hover a {
-	border-top: 5px solid #000;
+	border-top: 3px solid #000;
 	background: rgba(0,0,0,0.95);
 }
 
@@ -391,19 +392,19 @@ strong,b,.bold {
 }
 
 .about #nav li a.selected {
-	border-top: 5px solid #398BB3;
+	border-top: 3px solid #398BB3;
 }
 
 .hacking #nav li a.selected {
-	border-top: 5px solid #551a8b;
+	border-top: 3px solid #551a8b;
 }
 
 .research #nav li a.selected {
-	border-top: 5px solid #3dad75;
+	border-top: 3px solid #3dad75;
 }
 
 .blog #nav li a.selected {
-	border-top: 5px solid #ff6600;
+	border-top: 3px solid #ff6600;
 }
 
 #back-top {

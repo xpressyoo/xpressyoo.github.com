@@ -357,7 +357,7 @@ strong,b,.bold {
 }
 
 .scr #nav, .scr #nav ul {
-	height:33px;
+	height:33px
 }
 
 
@@ -373,7 +373,7 @@ strong,b,.bold {
 	}
 
 #nav li:after {
-	content: "|";650ms
+	content: "|";
 	color: rgba(0,0,0,0.25);
 }
 

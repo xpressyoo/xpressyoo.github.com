@@ -1,14 +1,14 @@
 var map, marker1, marker2, conversion;
 $(function() {
 	// Global Variables
-	var wh = ((66 * $(window).height()) / 100);
-	var ww = $(window).width();
-	var from = new google.maps.LatLng(51.75527, -1.25894);
+	var wh = ((66 * $(window).height()) / 100),
+		ww = $(window).width(),
+		from = new google.maps.LatLng(51.75527, -1.25894);
 	//Language
-	var language = navigator.language || navigator.userLanguage;
-	var lang = language.substring(0, 2);
-	var img1 = 'lib/fb.png';
-	var img2 = 'lib/you.png';
+	var language = navigator.language || navigator.userLanguage,
+		lang = language.substring(0, 2),
+		img1 = 'lib/fb.png',
+		img2 = 'lib/you.png';
 	/////////Google Map
 	map = initializeMap();
 	$(window).resize(function() {
@@ -27,8 +27,8 @@ $(function() {
 				mapcanvasno.style.height = wh + 'px';
 				mapcanvasno.style.width = ww + 'px';
 				document.querySelector('#artmap').appendChild(mapcanvasno);
-				var to = new google.maps.LatLng(data.latitude, data.longitude);
-				var dist = google.maps.geometry.spherical.computeDistanceBetween(from, to);
+				var to = new google.maps.LatLng(data.latitude, data.longitude),
+					dist = google.maps.geometry.spherical.computeDistanceBetween(from, to);
 				if (dist > 999) {
 					conversion = Math.round((dist / 1000) * 0.621371192) + '<span class="small">mi</span>';
 					dist = Math.round(dist / 1000) + '<span class="small">kms</span>';
@@ -226,8 +226,8 @@ $(function() {
 		}]
 	};
 	BrowserDetect.init();
-	var os = BrowserDetect.OS;
-	var browser = BrowserDetect.browser;
+	var os = BrowserDetect.OS,
+		browser = BrowserDetect.browser;
 	//Webcam
 	if (browser === 'Safari' || browser === 'Explorer') {
 		$('#webcambtn').addClass('hidden');

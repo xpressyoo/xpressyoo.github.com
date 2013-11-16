@@ -883,6 +883,10 @@ i.sm {
 	padding: 1% 0;
 }
 
+.f2 p {
+	line-height:1.5em
+	}
+
 .index .f2 h5 {
 	color: #bbb;
 	font-size: .9em;

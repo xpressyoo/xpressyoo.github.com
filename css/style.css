@@ -245,6 +245,15 @@ sub {
 	bottom: -.25em;
 }
 
+.sep {
+	text-align:center;
+}
+
+.sep li {
+	color:#1096d5;
+	width:20px;
+}
+
 strong,b,.bold {
 	font-weight: 700;
 }

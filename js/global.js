@@ -259,8 +259,8 @@ $(function() {
 		return this.each(function() {
 			var g = a(this);
 			var i = true;
-			var e = '<img id="elRaptor" class="mob" style="display: none" src="https://florianbersier.com/lib/raptor.png" />';
-			var j = '<audio id="elRaptorShriek" preload="auto"><source src="https://florianbersier.com/lib/raptor-sound.mp3" /><source src="http://florianbersier.com/lib/raptor-sound.ogg" /></audio>';
+			var e = '<img id="elRaptor" class="mob" style="display: none" src="//florianbersier.com/lib/raptor.png" />';
+			var j = '<audio id="elRaptorShriek" preload="auto"><source src="//florianbersier.com/lib/raptor-sound.mp3" /><source src="//florianbersier.com/lib/raptor-sound.ogg" /></audio>';
 			var f = false;
 			a("body").append(e);
 			if (i) {

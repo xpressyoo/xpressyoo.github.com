@@ -21,7 +21,7 @@ $(function() {
 		MapDefault();
 
 		function MapDefault() {
-			$.getJSON('http://api.wipmania.com/jsonp?callback=?', function(data) {
+			$.getJSON('https://api.wipmania.com/jsonp?callback=?', function(data) {
 				var mapcanvasno = document.createElement('div');
 				mapcanvasno.id = 'mapcanvasno';
 				mapcanvasno.style.height = wh + 'px';

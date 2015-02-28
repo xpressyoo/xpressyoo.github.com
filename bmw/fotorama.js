@@ -1147,7 +1147,8 @@ function getVideoThumbs (dataFrame, data, fotorama) {
       dataType: 'jsonp',
       success: function (json) {
         dataFrame.thumbsReady = true;
-        updateData(data, {img: json[0].thumbnail_large, thumb: json[0].thumbnail_small}, dataFrame.i, fotorama);
+        updateData(data, {img: json[0].thumbnail_large, thumb: json[0].thumbnail_small}, dataFrame.i, 
+        fotorama);
       }
     });
   } else {

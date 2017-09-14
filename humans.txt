@@ -2,25 +2,9 @@
 
 Name	 :	Florian Bersier
 
-Website  : 	http://florianbersier.com
-Google+  :  	https://profiles.google.com/florian.bersier
+Website  : 	https://florianbersier.com
+Google+  :  https://profiles.google.com/florian.bersier
 Twitter  : 	https://twitter.com/xpressyoo
 Facebook :	https://facebook.com/florian.bersier
-LinkedIn : 	http://www.linkedin.com/in/florianbersier
+LinkedIn : 	https://www.linkedin.com/in/florianbersier
 Github   :	https://github.com/xpressyoo
-Portfolio:	http://www.be.net/bersier
-
-
-/* SITE */
-
-Standards : HTML5, CSS3, JavaScript
-Components: jQuery
-Libs & API: Google Map, Twitter, SoundCloud, GitHub
-Icons	  : Font Awesome, http://fortawesome.github.com/Font-Awesome/
-
-/* BLOG */
-
-Framework : Jekyll & Ruby
-Standards : HTML5, CSS3, JavaScript
-Components: jQuery
-Libs and API: Youtube
